@@ -14,7 +14,7 @@ import kotlin.math.absoluteValue
 class MainActivity : AppCompatActivity(), IMainContract {
 
     private lateinit var alertDialog: AlertDialog
-    var mainViewModel = MainViewModel(this)
+    private var mainViewModel = MainViewModel(this)
 
     private val convert: (String) -> Long = { s: String -> s.toLong().absoluteValue}
 
